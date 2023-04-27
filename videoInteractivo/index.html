@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-FActor: Sky Celular</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <video id="miVideo" type="mp4" src="SkyCelular.mp4" controls muted autoplay playsinline></video>
+        <img src="img01.png" alt="" class="img01">
+        <img src="btnPlanes.png" alt="" class="cta">
+        <button class="button-li" onclick="pauseVid(); mostrarSection();"></button>
+
+
+        <section id="planes">
+            <img src="bg.jpg" alt="" class="bg">
+            <img src="cta.png" alt="" class="cta02">
+
+            <article id="plan01" class="plan">
+                <img src="2Gb_plan.png" alt="">
+            </article>
+    
+            <article id="plan02" class="plan">
+                <img src="4Gb_plan.png" alt="">
+            </article>
+    
+            <article id="plan03" class="plan">
+                <img src="7Gb_plan.png" alt="">
+            </article>
+    
+            <article id="plan04" class="plan">
+                <img src="16Gb_plan.png" alt="">
+            </article>
+    
+            <article id="plan05" class="plan">
+                <img src="23Gb_plan.png" alt="">
+            </article>
+            
+            <img src="text03.png" alt="" class="text03">
+            <img onmouseover="mostrarPlan01();" onmouseleave="ocultarPlan01();" src="2GB_btn.png" alt="" class="btnPlan01">
+            <img onmouseover="mostrarPlan02();" onmouseleave="ocultarPlan02();" src="4GB_btn.png" alt="" class="btnPlan02">
+            <img onmouseover="mostrarPlan03();" onmouseleave="ocultarPlan03();" src="7GB_btn.png" alt="" class="btnPlan03">
+            <img onmouseover="mostrarPlan04();" onmouseleave="ocultarPlan04();" src="16GB_btn.png" alt="" class="btnPlan04">
+            <img onmouseover="mostrarPlan05();" onmouseleave="ocultarPlan05();" src="23Gb_btn.png" alt="" class="btnPlan05">
+
+            <img onclick="ocultarSection(); playVid();" src="btnBack.png" alt="" class="btnBack">
+        </section>
+
+    </main>
+
+    <script>
+        function mostrarSection(){
+            document.getElementById('planes').style.display = 'block'
+            document.getElementById('planes').style.animation = 'aparecer 1s ease'  
+        }
+
+        function ocultarSection() {
+            document.getElementById('planes').style.display = 'none'
+        }
+
+        var vid = document.getElementById('miVideo');
+
+        function playVid() {
+            miVideo.play();
+        }
+
+        function pauseVid() {
+            miVideo.pause();
+        }
+
+        function mostrarPlan01(){
+            document.getElementById('plan01').style.display = 'block'
+        }
+        function ocultarPlan01() {
+            document.getElementById('plan01').style.display = 'none'
+        }
+
+        function mostrarPlan02(){
+            document.getElementById('plan02').style.display = 'block'
+        }
+        function ocultarPlan02() {
+            document.getElementById('plan02').style.display = 'none'
+        }
+
+        function mostrarPlan03(){
+            document.getElementById('plan03').style.display = 'block'
+        }
+        function ocultarPlan03() {
+            document.getElementById('plan03').style.display = 'none'
+        }
+
+        function mostrarPlan04(){
+            document.getElementById('plan04').style.display = 'block'
+        }
+        function ocultarPlan04() {
+            document.getElementById('plan04').style.display = 'none'
+        }
+
+        function mostrarPlan05(){
+            document.getElementById('plan05').style.display = 'block'
+        }
+        function ocultarPlan05() {
+            document.getElementById('plan05').style.display = 'none'
+        }
+    </script>
+    
+</body>
+</html>

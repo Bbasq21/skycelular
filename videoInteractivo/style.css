@@ -1,0 +1,224 @@
+*{margin: 0; padding: 0;}
+
+/*============================================= ANIMACION */
+
+@keyframes aparecerPlan {
+    0%{opacity: 0; left: -30px}
+    100%{opacity: 1; left: 0px;}
+}
+
+@keyframes aparecer {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes rotar {
+    0%{top:60px}
+    100%{top: 70px;}
+}
+
+@keyframes deslizar {
+    0%{left: -300px;}
+    100%{left: -14px;}
+}
+
+@keyframes rebotar {
+    0%{scale: 1;}
+    50%{scale: 1.1;}
+    100%{scale: 1;}
+}
+
+/*============================================= BANNER */
+
+main{
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+video{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.img01{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    left: 10px;
+    top: 60px;
+
+    animation-name: rotar;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.cta{
+    position: absolute;
+    width: 180px;
+    height: auto;
+    left: 20px;
+    top: 20px;
+
+    animation-name: rebotar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+button{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/*============================================= INFO */
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.btnBack{
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    top: 10px;
+}
+
+.bg{
+    position: absolute;
+    width: 800px;
+    left: 0px;
+    top: 0px;
+}
+
+
+.cta02{
+    position: absolute;
+    width: 230px;
+    left: 260px;
+    top: 366px;
+
+    animation-name: rebotar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+/*============================================= PLANES */
+
+.text03{
+    position: absolute;
+    width: 82px;
+    left: 27px;
+    top: 33px;
+}
+
+.btnPlan01{
+    position: absolute;
+    width: 160px;
+    left: -300px;
+    top: 78px;
+    cursor: pointer;
+
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.btnPlan02{
+    position: absolute;
+    width: 160px;
+    left: -300px;
+    top: 141px;
+    cursor: pointer;
+
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-delay: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.btnPlan03{
+    position: absolute;
+    width: 160px;
+    left: -300px;
+    top: 203px;
+    cursor: pointer;
+
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-delay: .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.btnPlan04{
+    position: absolute;
+    width: 160px;
+    left: -300px;
+    top: 266px;
+    cursor: pointer;
+
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.btnPlan05{
+    position: absolute;
+    width: 160px;
+    left: -300px;
+    top: 327px;
+    cursor: pointer;
+
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-delay: 1.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.plan{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    animation-name: aparecerPlan;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;    
+}
+
+.plan img{
+    position: absolute;
+    width: auto;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
